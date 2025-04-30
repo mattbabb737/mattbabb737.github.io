@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Matt Babb",
     "section": "",
     "text": "Hello, everyone! My name is Matt (hence the title). Here is some sample text that I will update shortly. I am adding this text in order to test whether my page layout will in fact expand once there is more room needed. Let’s find out!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
