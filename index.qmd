@@ -1,5 +1,18 @@
 ---
 title: "Matt Babb"
+image: Me-1.png
+toc: false
+about:
+  template: jolla
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/matt-babb-854b1523b/
+    - text: GitHub
+      href: https://github.com/mattbabb737
+    - text: Email
+      href: mailto:mattbabb737@gmail.com
 ---
 
 Hello, everyone! My name is Matt (hence the title). Here is some sample text that I will update shortly.
