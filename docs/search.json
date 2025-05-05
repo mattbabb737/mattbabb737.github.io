@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "posts-listing-page.html",
+    "href": "posts-listing-page.html",
+    "title": "My Blog #1",
+    "section": "",
+    "text": "blog post title\n\n\n\nQuarto\n\nR\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nMatt Babb\n\n\nMay 5, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Matt Babb",
@@ -12,5 +19,194 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "reflection-template.html",
+    "href": "reflection-template.html",
+    "title": "Independent Learning (IL):",
+    "section": "",
+    "text": "Download the source code for the template here:\nreflection-template.qmd"
+  },
+  {
+    "objectID": "reflection-template.html#il-1-adding-new-skills",
+    "href": "reflection-template.html#il-1-adding-new-skills",
+    "title": "Independent Learning (IL):",
+    "section": "[IL-1] Adding new skills:",
+    "text": "[IL-1] Adding new skills:\n\nI can find and adopt new packages to accomplish tasks.\nI can adapt to different syntax styles (tidy, base, formula style, data.table).\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#il-2-online-resources",
+    "href": "reflection-template.html#il-2-online-resources",
+    "title": "Independent Learning (IL):",
+    "section": "[IL-2] Online resources:",
+    "text": "[IL-2] Online resources:\n\nI can use online resources (e.g., Google, ChatGPT, StackOverflow, YouTube) to solve problems, debug, or find new tools.\nI can use tutorials, etc. to enhance my understanding of new concepts.\nI can find source code for similar projects to use as starting points for my own.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#il-summary",
+    "href": "reflection-template.html#il-summary",
+    "title": "Independent Learning (IL):",
+    "section": "IL Summary",
+    "text": "IL Summary"
+  },
+  {
+    "objectID": "reflection-template.html#rw-1-file-code-and-data-management",
+    "href": "reflection-template.html#rw-1-file-code-and-data-management",
+    "title": "Independent Learning (IL):",
+    "section": "[RW-1] File, code, and data management:",
+    "text": "[RW-1] File, code, and data management:\n\nI can use Git and GitHub to track my progress (creating repos, cloning, forking, pull requesting).\nI always use R Projects and the {here} package to organize my scripts, notebooks, data, and applications.\nI always use pull requests when collaborating with others.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#rw-2-notebooks",
+    "href": "reflection-template.html#rw-2-notebooks",
+    "title": "Independent Learning (IL):",
+    "section": "[RW-2] Notebooks:",
+    "text": "[RW-2] Notebooks:\n\nI can use Quarto to produce a reproducible notebook and polished rendered documents\nI can use appropriate chunk options (echo, error, cache, etc.) to render my Quarto document quickly and cleanly.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#rw-3-code-style",
+    "href": "reflection-template.html#rw-3-code-style",
+    "title": "Independent Learning (IL):",
+    "section": "[RW-3] Code style",
+    "text": "[RW-3] Code style\n\nMy code is clear, readable, well-organized, and well-commented.\n\n\nLevel: 1\n\n\nJustification"
+  },
+  {
+    "objectID": "reflection-template.html#rw-summary",
+    "href": "reflection-template.html#rw-summary",
+    "title": "Independent Learning (IL):",
+    "section": "RW Summary",
+    "text": "RW Summary"
+  },
+  {
+    "objectID": "reflection-template.html#tc-1-project-summaries",
+    "href": "reflection-template.html#tc-1-project-summaries",
+    "title": "Independent Learning (IL):",
+    "section": "[TC-1] Project summaries:",
+    "text": "[TC-1] Project summaries:\n\nI can create clear and succinct summaries of a project.\nI accurately interpret statistical or modeling results.\nI consider the appropriate scope and impact of my project results.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#tc-2-documentation",
+    "href": "reflection-template.html#tc-2-documentation",
+    "title": "Independent Learning (IL):",
+    "section": "[TC-2] Documentation:",
+    "text": "[TC-2] Documentation:\n\nI can create a user-friendly dashboard.\nI provide ample documentation for my custom functions.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#tc-summary",
+    "href": "reflection-template.html#tc-summary",
+    "title": "Independent Learning (IL):",
+    "section": "TC Summary",
+    "text": "TC Summary"
+  },
+  {
+    "objectID": "reflection-template.html#dm-1-data-preparation",
+    "href": "reflection-template.html#dm-1-data-preparation",
+    "title": "Independent Learning (IL):",
+    "section": "[DM-1] Data Preparation",
+    "text": "[DM-1] Data Preparation\n\nI can read in datasets to R, including untidy ones.\nI can clean datasets to deal with missing data, typos, poor formatting, etc.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#dm-2-data-wrangling",
+    "href": "reflection-template.html#dm-2-data-wrangling",
+    "title": "Independent Learning (IL):",
+    "section": "[DM-2] Data Wrangling",
+    "text": "[DM-2] Data Wrangling\n\nI can cleverly use pivoting, separating, grouping, and joining to wrangle data.\nI can use mapping (purrr) to perform repeated tasks.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#dm-3-data-formats",
+    "href": "reflection-template.html#dm-3-data-formats",
+    "title": "Independent Learning (IL):",
+    "section": "[DM-3] Data Formats",
+    "text": "[DM-3] Data Formats\n\nI can use API urls to access JSON data and convert it into a data frame\nI can scrape data from the web and convert it into a data frame\n\n\n## Fill in the line below with your self-assigned level for this objective.\nmy_level &lt;- 1\n\nportfolio_levels &lt;- portfolio_levels %&gt;%\n  bind_rows(tibble(Objective = \"DM-3\", \n                   Level = my_level))\n\n\nLevel: 1\n\n\nJustification"
+  },
+  {
+    "objectID": "reflection-template.html#dm-summary",
+    "href": "reflection-template.html#dm-summary",
+    "title": "Independent Learning (IL):",
+    "section": "DM Summary",
+    "text": "DM Summary"
+  },
+  {
+    "objectID": "reflection-template.html#pv-1-clear-accessible-visualizations",
+    "href": "reflection-template.html#pv-1-clear-accessible-visualizations",
+    "title": "Independent Learning (IL):",
+    "section": "[PV-1] Clear & Accessible Visualizations",
+    "text": "[PV-1] Clear & Accessible Visualizations\n\nI can make my plots more clear by removing the legend and adding annotations.\nI can edit the titles, subtitles, captions, axis labels, etc. to create a clearly labelled plot.\nI can choose colors (“scales”) and themes to make a visually pleasing and accessible plot.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#pv-2-dynamic-visualizations",
+    "href": "reflection-template.html#pv-2-dynamic-visualizations",
+    "title": "Independent Learning (IL):",
+    "section": "[PV-2] Dynamic Visualizations",
+    "text": "[PV-2] Dynamic Visualizations\n\nI can use a package like {gganimate} to create self-contained gifs.\nI can use a package like {plotly}, {ggplotly}, {leaflet}, {ggirafe}, etc. to make interactive html widgets.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#pv-3-interactive-visualizations",
+    "href": "reflection-template.html#pv-3-interactive-visualizations",
+    "title": "Independent Learning (IL):",
+    "section": "[PV-3] Interactive Visualizations",
+    "text": "[PV-3] Interactive Visualizations\n\nI can use Shiny or webR to create visualizations that react to a user’s input.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#pv-summary",
+    "href": "reflection-template.html#pv-summary",
+    "title": "Independent Learning (IL):",
+    "section": "PV Summary",
+    "text": "PV Summary"
+  },
+  {
+    "objectID": "reflection-template.html#cdai-1-r-programming-language",
+    "href": "reflection-template.html#cdai-1-r-programming-language",
+    "title": "Independent Learning (IL):",
+    "section": "[CDAI-1] R Programming Language",
+    "text": "[CDAI-1] R Programming Language\n\nI understand non-standard evaluation (aka “tidy eval” or “unquoted objects”), and I can use tunneling in my functions.\nI understand functional programming, and I can use functions as objects in my code design.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#cdai-2-object-handling",
+    "href": "reflection-template.html#cdai-2-object-handling",
+    "title": "Independent Learning (IL):",
+    "section": "[CDAI-2] Object Handling",
+    "text": "[CDAI-2] Object Handling\n\nI have built in checks for possible input problems\nI can make reasonable choices in my code design about when to save intermediate objects.\nI can convert objects between types and structures as needed.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#cdai-3-speed-and-efficiency",
+    "href": "reflection-template.html#cdai-3-speed-and-efficiency",
+    "title": "Independent Learning (IL):",
+    "section": "[CDAI-3] Speed and Efficiency",
+    "text": "[CDAI-3] Speed and Efficiency\n\nI can recognize moments of possible slowdown in my code, and use built-in functions or parallelizing to speed them up.\nI always use and design vectorized functions whenever possible.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#cdai-4-supporting-functions",
+    "href": "reflection-template.html#cdai-4-supporting-functions",
+    "title": "Independent Learning (IL):",
+    "section": "[CDAI-4] Supporting Functions",
+    "text": "[CDAI-4] Supporting Functions\n\nI write helper / shortcut functions to streamline repeated tasks and make my code easier to read.\nI use intermediate functions to streamline repeated or looping processes.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#cdai-5-algorithmic-process",
+    "href": "reflection-template.html#cdai-5-algorithmic-process",
+    "title": "Independent Learning (IL):",
+    "section": "[CDAI-5] Algorithmic Process",
+    "text": "[CDAI-5] Algorithmic Process\n\nI can invent and implement my own iterative algorithm.\nMy loops are clean and efficient.\nI have built in checks for possible problems or extreme cases in the algorithm.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#cdai-6-generative-art",
+    "href": "reflection-template.html#cdai-6-generative-art",
+    "title": "Independent Learning (IL):",
+    "section": "[CDAI-6] Generative Art",
+    "text": "[CDAI-6] Generative Art\n\nI can apply a variety of generative art functions to make a visually pleasing piece.\nI can explain why particular changes to the code result in particular differences in the visualization.\n\n\nLevel: 1\n\n\nJustification:"
+  },
+  {
+    "objectID": "reflection-template.html#cdai-summary",
+    "href": "reflection-template.html#cdai-summary",
+    "title": "Independent Learning (IL):",
+    "section": "CDAI Summary",
+    "text": "CDAI Summary"
+  },
+  {
+    "objectID": "reflection-template.html#grade",
+    "href": "reflection-template.html#grade",
+    "title": "Independent Learning (IL):",
+    "section": "Grade",
+    "text": "Grade\nBased on the summary plot above, I believe I have earned a ____ in STAT 541.\n\nJustification"
   }
 ]

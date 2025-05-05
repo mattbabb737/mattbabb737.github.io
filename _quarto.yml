@@ -10,6 +10,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - posts-listing-page.qmd
       - href: resources.qmd
         text: Test title
       
