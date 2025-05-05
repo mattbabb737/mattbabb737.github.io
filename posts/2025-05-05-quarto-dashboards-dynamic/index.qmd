@@ -9,3 +9,10 @@ image: preview-dynamic-dashboard.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
+<center>
+
+<iframe src="https://34kshr-matt-babb.shinyapps.io/lab-4/#belief-that-vaccines-are-safe" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>
+
+</center>

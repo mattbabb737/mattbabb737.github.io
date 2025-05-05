@@ -9,3 +9,10 @@ image: preview-static-dashboard.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
+<center>
+
+<iframe src="https://mattbabb737.quarto.pub/lab-3/#" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>
+
+</center>
