@@ -2,7 +2,9 @@
   {
     "listing": "/posts-listing-page.html",
     "items": [
-      "/posts/2025-05-05-advanced-visualizations/index.html"
+      "/posts/2025-05-05-advanced-visualizations/index.html",
+      "/posts/2025-05-05-quarto-dashboards-dynamic/index.html",
+      "/posts/2025-05-05-quarto-dashboards-static/index.html"
     ]
   }
 ]

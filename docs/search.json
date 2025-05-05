@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "posts-listing-page.html",
-    "href": "posts-listing-page.html",
-    "title": "My Blog #1",
-    "section": "",
-    "text": "blog post title\n\n\n\nQuarto\n\nR\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nMatt Babb\n\n\nMay 5, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Matt Babb",
-    "section": "",
-    "text": "Hello, everyone! My name is Matt (hence the title). Here is some sample text that I will update shortly. I am adding this text in order to test whether my page layout will in fact expand once there is more room needed. Let’s find out!"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "reflection-template.html",
     "href": "reflection-template.html",
     "title": "Independent Learning (IL):",
@@ -208,5 +187,26 @@
     "title": "Independent Learning (IL):",
     "section": "Grade",
     "text": "Grade\nBased on the summary plot above, I believe I have earned a ____ in STAT 541.\n\nJustification"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Matt Babb",
+    "section": "",
+    "text": "Hello, everyone! My name is Matt (hence the title). Here is some sample text that I will update shortly. I am adding this text in order to test whether my page layout will in fact expand once there is more room needed. Let’s find out!"
+  },
+  {
+    "objectID": "posts-listing-page.html",
+    "href": "posts-listing-page.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "Advanced visualization\n\n\n\nQuarto\n\nR\n\n\n\nExploring ideas about how to make visualizations both more appealing and more functional\n\n\n\nMatt Babb\n\n\nMay 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto dashboards (dynamic)\n\n\n\nQuarto\n\nR\n\nShiny\n\n\n\nTaking static dashboards and making them interactive using Shiny\n\n\n\nMatt Babb\n\n\nMay 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto dashboards (static)\n\n\n\nQuarto\n\nR\n\n\n\nMaking a Quarto dashboard with pages, tabs, and plots\n\n\n\nMatt Babb\n\n\nMay 5, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]

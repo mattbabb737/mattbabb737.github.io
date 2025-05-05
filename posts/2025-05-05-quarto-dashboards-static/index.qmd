@@ -1,10 +1,11 @@
 ---
-title: "Advanced visualization"
-description: "Exploring ideas about how to make visualizations both more appealing and more functional"
+title: "Quarto dashboards (static)"
+description: "Making a Quarto dashboard with pages, tabs, and plots"
 author:
   - name: Matt Babb
 date: 05-05-2025
 categories: [Quarto, R] # self-defined categories
-image: preview-visualization.jpg
+image: preview-static-dashboard.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
+

@@ -1,0 +1,11 @@
+---
+title: "Quarto dashboards (dynamic)"
+description: "Taking static dashboards and making them interactive using Shiny"
+author:
+  - name: Matt Babb
+date: 05-05-2025
+categories: [Quarto, R, Shiny] # self-defined categories
+image: preview-dynamic-dashboard.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
