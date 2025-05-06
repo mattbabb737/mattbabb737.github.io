@@ -40,7 +40,7 @@ num_to_cat_levels <- function(x){
 # 2 = Proficient
 # 3 = Virtuoso
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -66,7 +66,7 @@ portfolio_levels <- portfolio_levels %>%
 #| label: IL-2
 
 ## Fill in the line below with your self-assigned level for this objective.
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -120,7 +120,7 @@ portfolio_levels %>%
 #| include: false
 #| label: RW-1
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -144,7 +144,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: RW-2
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -167,7 +167,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: RW-3
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -245,7 +245,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: TC-2
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -298,7 +298,7 @@ portfolio_levels %>%
 #| include: false
 #| label: DM-1
 
-my_level <- 1
+my_level <- 2
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -322,7 +322,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: DM-2
 
-my_level <- 1
+my_level <- 2
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -394,7 +394,7 @@ portfolio_levels %>%
 #| include: false
 #| label: PV-1
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -418,7 +418,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: PV-2
 
-my_level <- 1
+my_level <- 3
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
@@ -441,7 +441,7 @@ portfolio_levels <- portfolio_levels %>%
 #| include: false
 #| label: PV-3
 
-my_level <- 1
+my_level <- 2
 
 portfolio_levels <- portfolio_levels %>%
   bind_rows(
