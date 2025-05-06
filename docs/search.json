@@ -11,7 +11,7 @@
     "href": "reflection-template.html#il-1-adding-new-skills",
     "title": "Independent Learning (IL):",
     "section": "[IL-1] Adding new skills:",
-    "text": "[IL-1] Adding new skills:\n\nI can find and adopt new packages to accomplish tasks.\nI can adapt to different syntax styles (tidy, base, formula style, data.table).\n\n\nLevel: 3\n\n\nJustification:"
+    "text": "[IL-1] Adding new skills:\n\nI can find and adopt new packages to accomplish tasks.\nI can adapt to different syntax styles (tidy, base, formula style, data.table).\n\n\nLevel: 3\n\n\nJustification: In this lab assignment, I was able to use the rnaturalearth package to more seamlessly blend the hoverable dots on my leaflet plot. You can see that here:\nAgreement vs disagreement"
   },
   {
     "objectID": "reflection-template.html#il-2-online-resources",

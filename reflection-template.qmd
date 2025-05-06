@@ -51,7 +51,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: In this lab assignment, I was able to use the `rnaturalearth` package to more seamlessly blend the hoverable dots on my `leaflet` plot. You can see that here:
+[Agreement vs disagreement](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#agreement-vs-disagreement-that-technology-will-increase-the-number-of-jobs-in-my-country-in-the-next-five-years)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 

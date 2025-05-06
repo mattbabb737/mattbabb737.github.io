@@ -423,6 +423,8 @@ This plot is a little harder to look at than the previous one. Here are the chan
 
 18. Improve the visualization above by either re-creating it with the issues you identified fixed OR by creating a new visualization that you believe tells the same story better.
 
+## Which are you more likely to believe when there is disagreement?
+
 ```{r}
 #| label: third-improved-visualization
 #| fig-width: 12
