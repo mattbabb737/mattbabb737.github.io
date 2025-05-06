@@ -79,7 +79,7 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification: I spend a lot of time in dialogue with ChatGPT understanding the code I am running, how to improve it, how to format it, and how it can be made more reader friendly. This code chunk, along with the included packages and resulting plot, were inspired by my using ChatGPT to improve my coding:
-[Which are you more likely to believe when there is disagreement?](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#third-data-visualization-improvement)
+[Which are you more likely to believe when there is disagreement?](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#which-are-you-more-likely-to-believe-when-there-is-disagreement)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -133,7 +133,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: I religiously commit to the main branch and push my changes as I make substantial improvements in my work. Here is my repo which shows my consistent git hygiene:
+[Lab 4 repo](https://github.com/mattbabb737/lab-4)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
