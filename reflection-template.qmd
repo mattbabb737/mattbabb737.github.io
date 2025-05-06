@@ -79,7 +79,7 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification: I spend a lot of time in dialogue with ChatGPT understanding the code I am running, how to improve it, how to format it, and how it can be made more reader friendly. This code chunk, along with the included packages and resulting plot, were inspired by my using ChatGPT to improve my coding:
-[Which are you more likely to believe when there is disagreement?]()
+[Which are you more likely to believe when there is disagreement?](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#third-data-visualization-improvement)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
