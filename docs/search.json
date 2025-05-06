@@ -39,7 +39,7 @@
     "href": "reflection-template.html#rw-2-notebooks",
     "title": "Independent Learning (IL):",
     "section": "[RW-2] Notebooks:",
-    "text": "[RW-2] Notebooks:\n\nI can use Quarto to produce a reproducible notebook and polished rendered documents\nI can use appropriate chunk options (echo, error, cache, etc.) to render my Quarto document quickly and cleanly.\n\n\nLevel: 3\n\n\nJustification:"
+    "text": "[RW-2] Notebooks:\n\nI can use Quarto to produce a reproducible notebook and polished rendered documents\nI can use appropriate chunk options (echo, error, cache, etc.) to render my Quarto document quickly and cleanly.\n\n\nLevel: 3\n\n\nJustification: I strictly practicing good spacing, returning, and labeling practices when I code. I do this as much for myself as for anyone else. I also use chunk options intelligently and pre-emptively so that readers see what they need to. I believe this post is a good example of these in action:\n[Advanced visualizations]"
   },
   {
     "objectID": "reflection-template.html#rw-3-code-style",

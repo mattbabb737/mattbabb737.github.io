@@ -158,7 +158,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: I strictly practicing good spacing, returning, and labeling practices when I code. I do this as much for myself as for anyone else. I also use chunk options intelligently and pre-emptively so that readers see what they need to. I believe this post is a good example of these in action:
+[Advanced visualizations]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
