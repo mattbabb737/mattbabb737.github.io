@@ -11,7 +11,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 <center>
 
-<iframe src="https://34kshr-matt-babb.shinyapps.io/lab-4/#belief-that-vaccines-are-safe" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+<iframe src="https://34kshr-matt-babb.shinyapps.io/lab-4/#belief-that-vaccines-are-safe" frameborder="0" width="100%" height="800" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 
 </iframe>
 
