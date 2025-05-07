@@ -236,7 +236,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: [Have yet to implement this skill]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -260,7 +260,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: I am very happy with how my dashboards have come out. There are easy to use, they are styled with the reader in mind, and they display information in novel and interactive ways that make it incredibly easy to get both general insights and specific data points. They can be seen here:
+
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
