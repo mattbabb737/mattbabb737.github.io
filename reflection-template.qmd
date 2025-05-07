@@ -79,7 +79,7 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification: I spend a lot of time in dialogue with ChatGPT understanding the code I am running, how to improve it, how to format it, and how it can be made more reader friendly. This code chunk, along with the included packages and resulting plot, were inspired by my using ChatGPT to improve my coding:
-[Which are you more likely to believe when there is disagreement?](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#which-are-you-more-likely-to-believe-when-there-is-disagreement)
+[Plot: Which are you more likely to believe when there is disagreement?](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#which-are-you-more-likely-to-believe-when-there-is-disagreement)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -182,7 +182,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification
+### Justification: I take great pains to make sure that my code is readable, spaced appropriately, and commented so that readers can track its structure and its function as needed. I am sure this can be improved further, but I am happy looking at it, which makes improving it that much easier. It can be seen in the code boxes throughout this lab:
+[Advanced visualizations](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -236,7 +237,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification: [Have yet to implement this skill]
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -261,7 +262,7 @@ portfolio_levels <- portfolio_levels %>%
 ### Level: `r my_level`
 
 ### Justification: I am very happy with how my dashboards have come out. There are easy to use, they are styled with the reader in mind, and they display information in novel and interactive ways that make it incredibly easy to get both general insights and specific data points. They can be seen here:
-
+[Static dashboard](https://mattbabb737.github.io/posts/2025-05-05-quarto-dashboards-static/)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -314,7 +315,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: I am certainly functional with this skill. I am able to load in data and manipulate to get it to a place where I can perform necessary functions. However, I know that I can improve in its efficiency and its intelligibility. This can be seen here in this advanced visualization lab:
+[Advanced visualizations](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -338,7 +340,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: Similarly to my previous score, I believe I can use these skills to get the job done with sufficient skill to make it servicable. However, I have room to grow in making it fluid and virtuosic. Again, this can be seen in the same visualization lab:
+[Advanced visualizations](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -358,7 +361,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -410,7 +413,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: My plots are a strong point for me. They are intuitive, they clear away unnecessary information, and they are interactive such that readers can easily narrow in on specific data, should that be there goal. This plot is a good example of that:
+[Plot: Which are you more likely to believe when there is disagreement?](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#which-are-you-more-likely-to-believe-when-there-is-disagreement)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -434,7 +438,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: My leaflet plot is a well-crafted and visually satisfying object. It combines both reader-friendliness and simplicity to give exactly the information it needs without adding unnecessary baggage. It can be viewed here:
+[Leaflet plot](https://mattbabb737.github.io/posts/2025-05-05-advanced-visualizations/#agreement-vs-disagreement-that-technology-will-increase-the-number-of-jobs-in-my-country-in-the-next-five-years)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -457,7 +462,8 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: My Shiny dashboard is not only functional but also visually engaging and provides information a reader is likely to want at the push of a button. I believe this dashboard demonstrates this:
+[Dynamic dashboard](https://mattbabb737.github.io/posts/2025-05-05-quarto-dashboards-dynamic/)
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -510,7 +516,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -535,7 +541,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -559,7 +565,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -583,7 +589,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -608,7 +614,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 
@@ -632,7 +638,7 @@ portfolio_levels <- portfolio_levels %>%
 
 ### Level: `r my_level`
 
-### Justification:
+### Justification: [Have yet to implement this skill in a lab]
 
 <!-- Insert references to the work shown in the blog(s) on your personal website -->
 

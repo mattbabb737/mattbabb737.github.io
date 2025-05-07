@@ -18,7 +18,7 @@
     "href": "reflection-template.html#il-2-online-resources",
     "title": "Independent Learning (IL):",
     "section": "[IL-2] Online resources:",
-    "text": "[IL-2] Online resources:\n\nI can use online resources (e.g., Google, ChatGPT, StackOverflow, YouTube) to solve problems, debug, or find new tools.\nI can use tutorials, etc. to enhance my understanding of new concepts.\nI can find source code for similar projects to use as starting points for my own.\n\n\nLevel: 3\n\n\nJustification: I spend a lot of time in dialogue with ChatGPT understanding the code I am running, how to improve it, how to format it, and how it can be made more reader friendly. This code chunk, along with the included packages and resulting plot, were inspired by my using ChatGPT to improve my coding:\nWhich are you more likely to believe when there is disagreement?"
+    "text": "[IL-2] Online resources:\n\nI can use online resources (e.g., Google, ChatGPT, StackOverflow, YouTube) to solve problems, debug, or find new tools.\nI can use tutorials, etc. to enhance my understanding of new concepts.\nI can find source code for similar projects to use as starting points for my own.\n\n\nLevel: 3\n\n\nJustification: I spend a lot of time in dialogue with ChatGPT understanding the code I am running, how to improve it, how to format it, and how it can be made more reader friendly. This code chunk, along with the included packages and resulting plot, were inspired by my using ChatGPT to improve my coding:\nPlot: Which are you more likely to believe when there is disagreement?"
   },
   {
     "objectID": "reflection-template.html#il-summary",
@@ -46,7 +46,7 @@
     "href": "reflection-template.html#rw-3-code-style",
     "title": "Independent Learning (IL):",
     "section": "[RW-3] Code style",
-    "text": "[RW-3] Code style\n\nMy code is clear, readable, well-organized, and well-commented.\n\n\nLevel: 3\n\n\nJustification"
+    "text": "[RW-3] Code style\n\nMy code is clear, readable, well-organized, and well-commented.\n\n\nLevel: 3\n\n\nJustification: I take great pains to make sure that my code is readable, spaced appropriately, and commented so that readers can track its structure and its function as needed. I am sure this can be improved further, but I am happy looking at it, which makes improving it that much easier. It can be seen in the code boxes throughout this lab:\nAdvanced visualizations"
   },
   {
     "objectID": "reflection-template.html#rw-summary",
@@ -60,14 +60,14 @@
     "href": "reflection-template.html#tc-1-project-summaries",
     "title": "Independent Learning (IL):",
     "section": "[TC-1] Project summaries:",
-    "text": "[TC-1] Project summaries:\n\nI can create clear and succinct summaries of a project.\nI accurately interpret statistical or modeling results.\nI consider the appropriate scope and impact of my project results.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill]"
+    "text": "[TC-1] Project summaries:\n\nI can create clear and succinct summaries of a project.\nI accurately interpret statistical or modeling results.\nI consider the appropriate scope and impact of my project results.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#tc-2-documentation",
     "href": "reflection-template.html#tc-2-documentation",
     "title": "Independent Learning (IL):",
     "section": "[TC-2] Documentation:",
-    "text": "[TC-2] Documentation:\n\nI can create a user-friendly dashboard.\nI provide ample documentation for my custom functions.\n\n\nLevel: 3\n\n\nJustification: I am very happy with how my dashboards have come out. There are easy to use, they are styled with the reader in mind, and they display information in novel and interactive ways that make it incredibly easy to get both general insights and specific data points. They can be seen here:"
+    "text": "[TC-2] Documentation:\n\nI can create a user-friendly dashboard.\nI provide ample documentation for my custom functions.\n\n\nLevel: 3\n\n\nJustification: I am very happy with how my dashboards have come out. There are easy to use, they are styled with the reader in mind, and they display information in novel and interactive ways that make it incredibly easy to get both general insights and specific data points. They can be seen here:\nStatic dashboard"
   },
   {
     "objectID": "reflection-template.html#tc-summary",
@@ -81,21 +81,21 @@
     "href": "reflection-template.html#dm-1-data-preparation",
     "title": "Independent Learning (IL):",
     "section": "[DM-1] Data Preparation",
-    "text": "[DM-1] Data Preparation\n\nI can read in datasets to R, including untidy ones.\nI can clean datasets to deal with missing data, typos, poor formatting, etc.\n\n\nLevel: 2\n\n\nJustification:"
+    "text": "[DM-1] Data Preparation\n\nI can read in datasets to R, including untidy ones.\nI can clean datasets to deal with missing data, typos, poor formatting, etc.\n\n\nLevel: 2\n\n\nJustification: I am certainly functional with this skill. I am able to load in data and manipulate to get it to a place where I can perform necessary functions. However, I know that I can improve in its efficiency and its intelligibility. This can be seen here in this advanced visualization lab:\nAdvanced visualizations"
   },
   {
     "objectID": "reflection-template.html#dm-2-data-wrangling",
     "href": "reflection-template.html#dm-2-data-wrangling",
     "title": "Independent Learning (IL):",
     "section": "[DM-2] Data Wrangling",
-    "text": "[DM-2] Data Wrangling\n\nI can cleverly use pivoting, separating, grouping, and joining to wrangle data.\nI can use mapping (purrr) to perform repeated tasks.\n\n\nLevel: 2\n\n\nJustification:"
+    "text": "[DM-2] Data Wrangling\n\nI can cleverly use pivoting, separating, grouping, and joining to wrangle data.\nI can use mapping (purrr) to perform repeated tasks.\n\n\nLevel: 2\n\n\nJustification: Similarly to my previous score, I believe I can use these skills to get the job done with sufficient skill to make it servicable. However, I have room to grow in making it fluid and virtuosic. Again, this can be seen in the same visualization lab:\nAdvanced visualizations"
   },
   {
     "objectID": "reflection-template.html#dm-3-data-formats",
     "href": "reflection-template.html#dm-3-data-formats",
     "title": "Independent Learning (IL):",
     "section": "[DM-3] Data Formats",
-    "text": "[DM-3] Data Formats\n\nI can use API urls to access JSON data and convert it into a data frame\nI can scrape data from the web and convert it into a data frame\n\n\n## Fill in the line below with your self-assigned level for this objective.\nmy_level &lt;- 1\n\nportfolio_levels &lt;- portfolio_levels %&gt;%\n  bind_rows(tibble(Objective = \"DM-3\", \n                   Level = my_level))\n\n\nLevel: 1\n\n\nJustification"
+    "text": "[DM-3] Data Formats\n\nI can use API urls to access JSON data and convert it into a data frame\nI can scrape data from the web and convert it into a data frame\n\n\n## Fill in the line below with your self-assigned level for this objective.\nmy_level &lt;- 1\n\nportfolio_levels &lt;- portfolio_levels %&gt;%\n  bind_rows(tibble(Objective = \"DM-3\", \n                   Level = my_level))\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#dm-summary",
@@ -109,21 +109,21 @@
     "href": "reflection-template.html#pv-1-clear-accessible-visualizations",
     "title": "Independent Learning (IL):",
     "section": "[PV-1] Clear & Accessible Visualizations",
-    "text": "[PV-1] Clear & Accessible Visualizations\n\nI can make my plots more clear by removing the legend and adding annotations.\nI can edit the titles, subtitles, captions, axis labels, etc. to create a clearly labelled plot.\nI can choose colors (“scales”) and themes to make a visually pleasing and accessible plot.\n\n\nLevel: 3\n\n\nJustification:"
+    "text": "[PV-1] Clear & Accessible Visualizations\n\nI can make my plots more clear by removing the legend and adding annotations.\nI can edit the titles, subtitles, captions, axis labels, etc. to create a clearly labelled plot.\nI can choose colors (“scales”) and themes to make a visually pleasing and accessible plot.\n\n\nLevel: 3\n\n\nJustification: My plots are a strong point for me. They are intuitive, they clear away unnecessary information, and they are interactive such that readers can easily narrow in on specific data, should that be there goal. This plot is a good example of that:\nPlot: Which are you more likely to believe when there is disagreement?"
   },
   {
     "objectID": "reflection-template.html#pv-2-dynamic-visualizations",
     "href": "reflection-template.html#pv-2-dynamic-visualizations",
     "title": "Independent Learning (IL):",
     "section": "[PV-2] Dynamic Visualizations",
-    "text": "[PV-2] Dynamic Visualizations\n\nI can use a package like {gganimate} to create self-contained gifs.\nI can use a package like {plotly}, {ggplotly}, {leaflet}, {ggirafe}, etc. to make interactive html widgets.\n\n\nLevel: 3\n\n\nJustification:"
+    "text": "[PV-2] Dynamic Visualizations\n\nI can use a package like {gganimate} to create self-contained gifs.\nI can use a package like {plotly}, {ggplotly}, {leaflet}, {ggirafe}, etc. to make interactive html widgets.\n\n\nLevel: 3\n\n\nJustification: My leaflet plot is a well-crafted and visually satisfying object. It combines both reader-friendliness and simplicity to give exactly the information it needs without adding unnecessary baggage. It can be viewed here:\nLeaflet plot"
   },
   {
     "objectID": "reflection-template.html#pv-3-interactive-visualizations",
     "href": "reflection-template.html#pv-3-interactive-visualizations",
     "title": "Independent Learning (IL):",
     "section": "[PV-3] Interactive Visualizations",
-    "text": "[PV-3] Interactive Visualizations\n\nI can use Shiny or webR to create visualizations that react to a user’s input.\n\n\nLevel: 2\n\n\nJustification:"
+    "text": "[PV-3] Interactive Visualizations\n\nI can use Shiny or webR to create visualizations that react to a user’s input.\n\n\nLevel: 2\n\n\nJustification: My Shiny dashboard is not only functional but also visually engaging and provides information a reader is likely to want at the push of a button. I believe this dashboard demonstrates this:\nDynamic dashboard"
   },
   {
     "objectID": "reflection-template.html#pv-summary",
@@ -137,42 +137,42 @@
     "href": "reflection-template.html#cdai-1-r-programming-language",
     "title": "Independent Learning (IL):",
     "section": "[CDAI-1] R Programming Language",
-    "text": "[CDAI-1] R Programming Language\n\nI understand non-standard evaluation (aka “tidy eval” or “unquoted objects”), and I can use tunneling in my functions.\nI understand functional programming, and I can use functions as objects in my code design.\n\n\nLevel: 1\n\n\nJustification:"
+    "text": "[CDAI-1] R Programming Language\n\nI understand non-standard evaluation (aka “tidy eval” or “unquoted objects”), and I can use tunneling in my functions.\nI understand functional programming, and I can use functions as objects in my code design.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#cdai-2-object-handling",
     "href": "reflection-template.html#cdai-2-object-handling",
     "title": "Independent Learning (IL):",
     "section": "[CDAI-2] Object Handling",
-    "text": "[CDAI-2] Object Handling\n\nI have built in checks for possible input problems\nI can make reasonable choices in my code design about when to save intermediate objects.\nI can convert objects between types and structures as needed.\n\n\nLevel: 1\n\n\nJustification:"
+    "text": "[CDAI-2] Object Handling\n\nI have built in checks for possible input problems\nI can make reasonable choices in my code design about when to save intermediate objects.\nI can convert objects between types and structures as needed.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#cdai-3-speed-and-efficiency",
     "href": "reflection-template.html#cdai-3-speed-and-efficiency",
     "title": "Independent Learning (IL):",
     "section": "[CDAI-3] Speed and Efficiency",
-    "text": "[CDAI-3] Speed and Efficiency\n\nI can recognize moments of possible slowdown in my code, and use built-in functions or parallelizing to speed them up.\nI always use and design vectorized functions whenever possible.\n\n\nLevel: 1\n\n\nJustification:"
+    "text": "[CDAI-3] Speed and Efficiency\n\nI can recognize moments of possible slowdown in my code, and use built-in functions or parallelizing to speed them up.\nI always use and design vectorized functions whenever possible.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#cdai-4-supporting-functions",
     "href": "reflection-template.html#cdai-4-supporting-functions",
     "title": "Independent Learning (IL):",
     "section": "[CDAI-4] Supporting Functions",
-    "text": "[CDAI-4] Supporting Functions\n\nI write helper / shortcut functions to streamline repeated tasks and make my code easier to read.\nI use intermediate functions to streamline repeated or looping processes.\n\n\nLevel: 1\n\n\nJustification:"
+    "text": "[CDAI-4] Supporting Functions\n\nI write helper / shortcut functions to streamline repeated tasks and make my code easier to read.\nI use intermediate functions to streamline repeated or looping processes.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#cdai-5-algorithmic-process",
     "href": "reflection-template.html#cdai-5-algorithmic-process",
     "title": "Independent Learning (IL):",
     "section": "[CDAI-5] Algorithmic Process",
-    "text": "[CDAI-5] Algorithmic Process\n\nI can invent and implement my own iterative algorithm.\nMy loops are clean and efficient.\nI have built in checks for possible problems or extreme cases in the algorithm.\n\n\nLevel: 1\n\n\nJustification:"
+    "text": "[CDAI-5] Algorithmic Process\n\nI can invent and implement my own iterative algorithm.\nMy loops are clean and efficient.\nI have built in checks for possible problems or extreme cases in the algorithm.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#cdai-6-generative-art",
     "href": "reflection-template.html#cdai-6-generative-art",
     "title": "Independent Learning (IL):",
     "section": "[CDAI-6] Generative Art",
-    "text": "[CDAI-6] Generative Art\n\nI can apply a variety of generative art functions to make a visually pleasing piece.\nI can explain why particular changes to the code result in particular differences in the visualization.\n\n\nLevel: 1\n\n\nJustification:"
+    "text": "[CDAI-6] Generative Art\n\nI can apply a variety of generative art functions to make a visually pleasing piece.\nI can explain why particular changes to the code result in particular differences in the visualization.\n\n\nLevel: 1\n\n\nJustification: [Have yet to implement this skill in a lab]"
   },
   {
     "objectID": "reflection-template.html#cdai-summary",
