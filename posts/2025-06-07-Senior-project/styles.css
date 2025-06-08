@@ -1,0 +1,37 @@
+/* Make section headings dark purple */
+h1, h2, h3, h4 {
+  color: #4B0082 !important;
+}
+
+/* Style citation hyperlinks */
+a.citation, a[href^="#ref-"] {
+  color: #8844bb !important;  /* Light purple */
+  text-decoration: none !important;
+}
+
+a.citation:hover, a[href^="#ref-"]:hover {
+  color: #BA80E0 !important;  /* Slightly lighter on hover */
+  text-decoration: underline !important;
+}
+
+/* Style DOI and other links in references */
+.csl-entry a {
+  color: #8844bb !important;  /* Light purple */
+  text-decoration: none !important;
+}
+
+.csl-entry a:hover {
+  color: #BA80E0 !important;  /* Slightly lighter on hover */
+  text-decoration: underline !important;
+}
+
+/* Change the color of the anchor link icon that appears on heading hover */
+.anchorjs-link {
+  color: #8844bb !important;
+  text-decoration: none;
+}
+
+.anchorjs-link:hover {
+  color: #a366d3 !important;
+  text-decoration: underline;
+}

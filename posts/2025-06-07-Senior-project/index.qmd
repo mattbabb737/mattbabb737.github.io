@@ -1,0 +1,19 @@
+---
+title: "Meditation and retrospective time estimation"
+description: An empirical study investigating the effect of mindfulness meditation on how we perceive the flow of time.
+author:
+  - Matt Babb
+  - J.P. Boiler
+  - James Elliott
+  - James Antony
+date: 06-07-2025
+categories: [Quarto, R, CSS, CSL]
+image: lof_plot.jpg
+---
+
+<iframe 
+  src="MTP_final.html" 
+  width="100%" 
+  height="1200px" 
+  style="border: none; overflow: auto;">
+</iframe>
