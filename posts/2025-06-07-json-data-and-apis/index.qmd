@@ -1,6 +1,6 @@
 ---
 title: "JSON Data and API's"
-description: "[add title]"
+description: "Access and parse API-based JSON data in R."
 author:
   - name: Matt Babb
 date: 06-07-2025

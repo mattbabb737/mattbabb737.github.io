@@ -1,6 +1,6 @@
 ---
 title: "Quarto dashboards (static)"
-description: "Making a Quarto dashboard with pages, tabs, and plots"
+description: "Making a Quarto dashboard with pages, tabs, and plots."
 author:
   - name: Matt Babb
 date: 05-05-2025

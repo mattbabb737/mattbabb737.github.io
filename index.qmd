@@ -15,4 +15,4 @@ about:
       href: mailto:mattbabb737@gmail.com
 ---
 
-Hello, everyone! My name is Matt (hence the title). Here is some sample text that I will update shortly. I am adding this text in order to test whether my page layout will in fact expand once there is more room needed. Let's find out!
+Hello! Thank you for finding your way to my portfolio. Here you'll find numerous posts exploring many techniques and features of statistical computing in R, as well as my Senior Project. Enjoy!

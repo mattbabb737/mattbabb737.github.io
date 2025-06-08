@@ -8,7 +8,7 @@
 
 <meta name="author" content="Matt Babb">
 <meta name="dcterms.date" content="2025-06-07">
-<meta name="description" content="[add description]">
+<meta name="description" content="Extracting, cleaning, and organizing data from multiple web pages into a structured format.">
 
 <title>Web Scraping – Matt Babb</title>
 <style>
@@ -4249,16 +4249,8 @@ border: 0;
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../posts-listing-page.html"> 
-<span class="menu-text">My Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../resume.html"> 
-<span class="menu-text">Resume</span></a>
+<span class="menu-text">My Portfolio</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -4275,7 +4267,7 @@ border: 0;
       <div class="quarto-title-block"><div><h1 class="title">Web Scraping</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
                   <div>
         <div class="description">
-          [add description]
+          Extracting, cleaning, and organizing data from multiple web pages into a structured format.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -4659,6 +4651,7 @@ border: 0;
 </div>
 </div>
 <p><strong>Part 6:</strong> Evaluate the code that you wrote in terms of <strong>efficiency</strong>. To what extent do your function(s) adhere to the <strong>principles for writing good functions</strong>? To what extent are your <strong>functions efficient</strong>? To what extent is your <strong>iteration of these functions efficient</strong>?</p>
+<p>The code is efficient. There are few objects saved and pipelines are used extensively to further that goal. Furthermore, leveraging Quarto’s design, we can further bolster efficiency by selectively caching the output of a few cells and make a nice space/time deal–scraping the data takes time due to the number of pages that need to be scraped, so we elected to cache those outputs. Of course, our code still has to run once, but since the targets seem to be static, this allows us to spend some memory to speed up execution time. Since we are caching, we save two objects so as to obviate scraping the site again.</p>
 
 
 <!-- -->
@@ -5130,7 +5123,7 @@ border: 0;
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
 <div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;Web Scraping&quot;</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;[add description]&quot;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;Extracting, cleaning, and organizing data from multiple web pages into a structured format.&quot;</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Matt Babb</span></span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 06-07-2025</span></span>
@@ -5393,6 +5386,7 @@ border: 0;
 <span id="cb10-279"><a href="#cb10-279" aria-hidden="true" tabindex="-1"></a>To what extent are your **functions efficient**? To what extent is your </span>
 <span id="cb10-280"><a href="#cb10-280" aria-hidden="true" tabindex="-1"></a>**iteration of these functions efficient**? </span>
 <span id="cb10-281"><a href="#cb10-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-282"><a href="#cb10-282" aria-hidden="true" tabindex="-1"></a>The code is efficient. There are few objects saved and pipelines are used extensively to further that goal. Furthermore, leveraging Quarto’s design, we can further bolster efficiency by selectively caching the output of a few cells and make a nice space/time deal–scraping the data takes time due to the number of pages that need to be scraped, so we elected to cache those outputs. Of course, our code still has to run once, but since the targets seem to be static, this allows us to spend some memory to speed up execution time. Since we are caching, we save two objects so as to obviate scraping the site again.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

@@ -1,6 +1,6 @@
 ---
 title: "Generative Art"
-description: "[add description]"
+description: "Explore algorithmic aesthetics by using iterative functions to create mathematical art."
 author:
   - name: Matt Babb
 date: 06-07-2025

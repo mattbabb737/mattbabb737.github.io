@@ -1,6 +1,6 @@
 ---
 title: "Web Scraping"
-description: "[add description]"
+description: "Extracting, cleaning, and organizing data from multiple web pages into a structured format."
 author:
   - name: Matt Babb
 date: 06-07-2025
@@ -265,4 +265,4 @@ what extent do your function(s) adhere to the **principles for writing good func
 To what extent are your **functions efficient**? To what extent is your 
 **iteration of these functions efficient**? 
 
-
+The code is efficient. There are few objects saved and pipelines are used extensively to further that goal. Furthermore, leveraging Quarto’s design, we can further bolster efficiency by selectively caching the output of a few cells and make a nice space/time deal–scraping the data takes time due to the number of pages that need to be scraped, so we elected to cache those outputs. Of course, our code still has to run once, but since the targets seem to be static, this allows us to spend some memory to speed up execution time. Since we are caching, we save two objects so as to obviate scraping the site again.

@@ -1,6 +1,6 @@
 ---
 title: "Advanced visualizations"
-description: "Exploring ideas about how to make visualizations both more appealing and more functional"
+description: "Exploring ideas about how to make visualizations both more appealing and more functional."
 author:
   - name: Matt Babb
 date: 05-05-2025

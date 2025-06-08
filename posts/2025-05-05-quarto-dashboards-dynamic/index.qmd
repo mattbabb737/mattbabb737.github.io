@@ -1,6 +1,6 @@
 ---
 title: "Quarto dashboards (dynamic)"
-description: "Taking static dashboards and making them interactive using Shiny"
+description: "Taking static dashboards and making them interactive using Shiny."
 author:
   - name: Matt Babb
 date: 05-05-2025

@@ -1,6 +1,6 @@
 ---
 title: "Writing Efficient Functions"
-description: "Examples of computationally sensible and user-friendly function writing"
+description: "Examples of computationally sensible and user-friendly function writing."
 author:
   - name: Matt Babb
 date: 06-07-2025
