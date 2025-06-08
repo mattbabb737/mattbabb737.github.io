@@ -1,5 +1,253 @@
 ---
-title: "index"
-format: html
+title: "Generative Art"
+description: "[add description]"
+author:
+  - name: Matt Babb
+date: 06-07-2025
+categories: [Quarto, R] # self-defined categories
+image: vortex_spin_final.gif
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+editor: source
+embed-resources: true
+echo: true
+warning: false
+error: false
+code-fold: true
+code-tools: true
 ---
 
+## Code Choices (Exhibit 1)
+
+To create this vortex, I wrote a function called `make_petal()` that places 150 petals in a circular pattern using trigonometry. I adjusted the inner and outer radius and the petal width, which allowed me to shape the form and density of the design. I used the “FantasticFox1” palette (I'm a big WA fan) and applied a mirrored gradient to give the piece a warm-to-cool symmetry. I also softened the borders with a faint black outline for a more smooth and delicate effect.
+
+The animated version uses the same base pattern but rotates it over 500 frames, creating a slow, mesmerizing spin. I created the GIF using `gifski_renderer()` and embedded it into the document to keep the rendering process efficient.
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(wesanderson)
+
+```
+
+```{r}
+#| fig-height: 10
+#| fig-width: 10
+
+make_petal <- function(n_petals = 150,
+                       inner_radius = 1,
+                       outer_radius = 2.999,
+                       width = 0.1) {
+  
+  angles <- seq(0, 2 * pi - (2 * pi / n_petals),
+                length.out = n_petals)
+
+  tibble(petal = 1:n_petals, angle = angles) %>%
+    rowwise() %>%
+    mutate(
+      x = list(c(
+        0,
+        inner_radius * cos(angle - width),
+        outer_radius * cos(angle),
+        inner_radius * cos(angle + width)
+      )),
+      y = list(c(
+        0,
+        inner_radius * sin(angle - width),
+        outer_radius * sin(angle),
+        inner_radius * sin(angle + width)
+      )),
+      id = petal
+    ) %>%
+    unnest(c(x, y)) %>%
+    ungroup() %>%
+    mutate(
+      gradient = abs(2 * (id - 1) / (n_petals - 1) - 1)
+    )
+}
+
+# Create data
+df <- make_petal(n_petals = 150)
+
+# Palette
+fox_colors <- wes_palette("FantasticFox1")
+mirror_palette <- colorRampPalette(fox_colors)(100)
+
+# Plot with faint borders
+ggplot(df, aes(x, y, group = id, fill = gradient)) +
+  geom_polygon(color = rgb(0, 0, 0, 0.05),
+               alpha = 0.95,
+               linejoin = "mitre",
+               size = 0.5) +
+  scale_fill_gradientn(colors = mirror_palette) +
+  coord_equal() +
+  theme_void() +
+  guides(fill = "none") +
+  ggtitle("1. Spectral Event Horizon [Static]") +
+  theme(plot.title = element_text(size = 30,
+                                  hjust = 0.5,
+                                  face = "bold")
+        )
+```
+
+```{r}
+#| fig-height: 10
+#| fig-width: 10
+#| eval: false
+
+library(tidyverse)
+library(wesanderson)
+library(gganimate)
+library(gifski)
+
+# Petal data function with frame-based rotation
+make_petal <- function(n_petals = 150,
+                       frames = 60,
+                       inner_radius = 1,
+                       outer_radius = 2.999,
+                       width = 0.1) {
+  
+  angles <- seq(0, 2 * pi - (2 * pi / n_petals), length.out = n_petals)
+ 
+  base <- tibble(petal = 1:n_petals, angle = angles) %>%
+    rowwise() %>%
+    mutate(
+      x_base = list(c(
+        0,
+        inner_radius * cos(angle - width),
+        outer_radius * cos(angle),
+        inner_radius * cos(angle + width)
+      )),
+      y_base = list(c(
+        0,
+        inner_radius * sin(angle - width),
+        outer_radius * sin(angle),
+        inner_radius * sin(angle + width)
+      )),
+      id = petal
+    ) %>%
+    unnest(c(x_base, y_base)) %>%
+    ungroup() %>%
+    mutate(
+      gradient = abs(2 * (id - 1) / (n_petals - 1) - 1)
+    )
+
+  # Duplicate data across frames and rotate
+  expand_grid(base, frame = 1:frames) %>%
+    mutate(
+      theta = 2 * pi * (frame - 1) / frames,  # rotation per frame
+      x = x_base * cos(theta) - y_base * sin(theta),
+      y = x_base * sin(theta) + y_base * cos(theta)
+    )
+}
+
+df <- make_petal(n_petals = 100, frames = 500)  # fewer petals + frames
+
+p <- ggplot(df, aes(x, y, group = interaction(id, frame), fill = gradient)) +
+  geom_polygon(color = rgb(0, 0, 0, 0.05),
+               alpha = 0.95,
+               size = 0.3,
+               linejoin = "mitre") +
+  scale_fill_gradientn(colors = mirror_palette) +
+  coord_equal() +
+  theme_void() +
+  guides(fill = "none") +
+  ggtitle("Spining") +
+  transition_manual(frame)
+
+animation <- animate(
+  p,
+  fps = 25,
+  duration = 10,
+  width = 500,
+  height = 500,
+  res = 100,
+  renderer = gifski_renderer(),
+  verbose = TRUE
+)
+```
+
+::: text-center
+# 1. Spectral Event Horizon \[GIF\]
+:::
+
+```{r}
+#| out.width: "110%"
+
+knitr::include_graphics("vortex_spin_final.gif")
+
+```
+
+### Description
+
+Give yourself 30 seconds and stare deeply into the core of this vortex. Let your face relax, slow your breath, and be still. Now notice the cyclone drawing your attention away from the calamities of this world, and into the openness of luminous presence, if only for a moment. The spectrum of possibility awaits your return...
+
+<br>
+
+<hr>
+
+<br>
+
+## Code Choices (Exhibit 2)
+
+For this piece, I created a custom C++ function based on the one from the Iterated Function Systems tutorial. I called it `unboxer_grid_circle()`, which simulates iterative transformations in a confined space. This produced the below image, which I then masked into a perfect circle using a different function called `raster_art_circle()`. I adjusted the scale to control the proportion of the visible part, centering the image. I used the "MononokeMedium" palette (I'm also a big Ghibli fan) to create an earthy, mysterious mood.
+
+::: text-center
+# 2. The Propagation of Mirth
+:::
+
+```{r}
+#| fig-height: 10
+#| fig-width: 10
+
+library(Rcpp)
+library(ghibli)
+
+
+raster_art_circle <- function(mat, palette, trim = 0.001, scale = 0.55) {
+  zlim <- quantile(mat, c(trim, 1 - trim))
+  mat[mat < zlim[1]] <- zlim[1]
+  mat[mat > zlim[2]] <- zlim[2]
+
+  # Create circular mask
+  w <- nrow(mat)
+  h <- ncol(mat)
+  center_x <- w / 2
+  center_y <- h / 2
+  radius <- min(center_x, center_y)
+
+  mask <- outer(1:w, 1:h, function(i, j) {
+    (i - center_x)^2 + (j - center_y)^2 <= radius^2
+  })
+
+  mat[!mask] <- NA
+
+  op <- par(mar = c(0, 0, 0, 0))
+  image(
+    z = mat,
+    axes = FALSE,
+    asp = 1,
+    useRaster = TRUE,
+    col = palette,
+    na.rm = TRUE
+  )
+  par(op)
+}
+
+library(ghibli)
+palette <- ghibli::ghibli_palette("MononokeMedium", type = "continuous")
+
+Rcpp::sourceCpp("unboxer_grid_circle.cpp")
+
+set.seed(123)
+mat <- unboxer_grid_circle_core(iterations = 1e7,
+                                layers = 10,
+                                pixels = 800,
+                                border = 1.2)
+
+raster_art_circle(mat, palette = palette)
+```
+
+### Description
+
+What if I told you that this is a map of the Earth, and on this map you are seeing the propagation of a truly human phenomenon? It isn't the exchange of currencies, the spreading of bad news, or the trading of fine furs. It is none other than the transmission of jokes over time: told during parties with cherished friends, overheard on buses by strangers, whispered over phones by newly enraptured lovers, or shared next to hospital beds with suffering patients, grateful for a brief respite. Each dot represents a new telling, a new smile, and a new precious instance of the sweet sound of laughter.

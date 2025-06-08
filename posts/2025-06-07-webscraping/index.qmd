@@ -1,5 +1,268 @@
 ---
-title: "index"
-format: html
+title: "Web Scraping"
+description: "[add description]"
+author:
+  - name: Matt Babb
+date: 06-07-2025
+categories: [Quarto, R] # self-defined categories
+image: cheese_table.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+editor: source
+embed-resources: true
+echo: true
+warning: false
+error: false
+code-fold: true
+code-tools: true
 ---
+
+> **Goal:** Scrape information from <https://www.cheese.com> to obtain a dataset
+> of characteristics about different cheeses, and gain deeper insight into your
+> coding process. 🪤
+
+**Part 1:** Locate and examine the `robots.txt` file for this website. Summarize
+what you learn from it.
+
+The `robots.txt` file only had two lines. It read: `User-agent: *
+Sitemap: https://www.cheese.com/sitemap.xml`. This means that is has no restrictions. Presumably this is because it is a relatively low-traffic website.
+
+
+**Part 2:** Learn about the `html_attr()` function from `rvest`. Describe how
+this function works with a small example.
+
+This function gets the attributes associated with some HTML elements.
+
+```{r}
+#| message: false
+library(tidyverse)
+library(rvest)
+
+read_html("https://www.cheese.com/alphabetical/?per_page=100") |>
+  html_nodes(".product-img a img") |>
+  html_attr("class")
+```
+
+This small example demonstrates how to get whether the image exists for each cheese.
+
+**Part 3:** (Do this alongside Part 4 below.) I 
+used [ChatGPT](https://chat.openai.com/chat) to start the process of scraping
+cheese information with the following prompt:
+
+> Write R code using the rvest package that allows me to scrape cheese
+> information from cheese.com.
+
+Fully document your process of checking this code. Record any observations you
+make about where ChatGPT is useful / not useful.
+
+```{r}
+#| eval: false
+#| label: small-example-of-getting-cheese-info
+
+# Load required libraries
+library(rvest)
+library(dplyr)
+
+# Define the URL
+url <- "https://www.cheese.com/alphabetical"
+
+# Read the HTML content from the webpage
+webpage <- read_html(url)
+
+# Extract the cheese names and URLs
+cheese_data <- webpage %>%
+  html_nodes(".cheese-item") %>%
+  html_nodes("a") %>%
+  html_attr("href") %>%
+  paste0("https://cheese.com", .)
+
+cheese_names <- webpage %>%
+  html_nodes(".cheese-item h3") %>%
+  html_text()
+
+# Create a data frame to store the results
+cheese_df <- data.frame(
+  Name = cheese_names,
+  URL = cheese_data,
+  stringsAsFactors = FALSE
+)
+
+# Print the data frame
+print(cheese_df)
+```
+
+The structure is nominally useful though the LLM appears to be guessing and can't access the page structure.
+
+The code is easy to read and is transparent for a reader to understand, but it isn't very efficient. The verboseness is communicative, though ultimately unnecessary.
+
+**Part 4:** Obtain the following information for **all** cheeses in the
+database:
+
+-   cheese name
+-   URL for the cheese's webpage (e.g., <https://www.cheese.com/gouda/>)
+-   whether or not the cheese has a picture (e.g., 
+[gouda](https://www.cheese.com/gouda/) has a picture, but 
+[bianco](https://www.cheese.com/bianco/) does not).
+
+To be kind to the website owners, please add a 1 second pause between page
+queries. (Note that you can view 100 cheeses at a time.)
+
+```{r}
+parse_page <- function(url, delay = 1) {
+  Sys.sleep(delay)
+
+  # cheese product listings
+  cheeses <- read_html(url) |>
+    html_nodes(".product-item")
+
+  # temp object that's used twice
+  nodes <- cheeses |>
+    html_nodes("h3 a")
+
+  # building tibble
+  tibble(
+    name = nodes |> html_text(),
+    url = nodes |>
+      html_attr("href") |>
+      (\(slug) glue::glue("https://www.cheese.com{slug}"))(),
+    has_image = cheeses |>
+      html_nodes(".product-img a img") |>
+      html_attr("class") |>
+      str_detect("image-exists")
+  )
+}
+```
+
+```{r}
+# can't run this on last page--will find number of pages to parse automatically.
+num_pages <- "https://www.cheese.com/alphabetical/?per_page=100" |>
+  read_html() |>
+  html_nodes(".pagination a") |>
+  html_text() |>
+  last() |>
+  as.numeric()
+
+cheeses <- paste0(
+  "https://www.cheese.com/alphabetical/?per_page=100&page=",
+  1:num_pages
+) |>
+  map_df(parse_page)
+```
+
+**Part 5:** When you go to a particular cheese's page (like 
+[gouda](https://www.cheese.com/gouda/)), you'll see more detailed information
+about the cheese. For [**just 10**]{.underline} of the cheeses in the database,
+obtain the following detailed information:
+
+-   milk information
+-   country of origin
+-   family
+-   type
+-   flavour
+
+(Just 10 to avoid overtaxing the website! Continue adding a 1 second pause
+between page queries.)
+
+```{r}
+cheese_list <- c(
+  "https://www.cheese.com/paneer/",
+  "https://www.cheese.com/chevre-en-marinade/",
+  "https://www.cheese.com/chevre-log/",
+  "https://www.cheese.com/goat-gouda/",
+  "https://www.cheese.com/gotcha-gouda/",
+  "https://www.cheese.com/gouda/",
+  "https://www.cheese.com/camembert-des-camarades/",
+  "https://www.cheese.com/camembert-de-portneuf/",
+  "https://www.cheese.com/camembert-de-normandie/",
+  "https://www.cheese.com/camembert/"
+)
+```
+
+```{r}
+#| eval: false
+
+parse_cheese <- function(url, delay = 1) {
+}
+
+"https://www.cheese.com/camembert-de-normandie/" |>
+  read_html() |>
+  html_nodes(".panel-body ul li") |>
+  html_text(trim = TRUE)
+# sep wider into tibble with NAs and rowbind or use hashmap or something?
+```
+
+```{r}
+
+parse_cheese <- function(url, delay = 1) {
+  Sys.sleep(delay)
+  
+  # Read page
+  page <- read_html(url)
+  
+  # Extract bullet point text
+  raw_info <- page %>%
+    html_nodes(".panel-body ul li") %>%
+    html_text(trim = TRUE)
+  
+  # Extract milk line separately (doesn't contain ":")
+  milk_line <- raw_info[grepl("^Made from", raw_info)]
+  milk <- str_remove(milk_line, "^Made from ")
+
+  # Extract remaining fields that use a colon
+  info_pairs <- raw_info[grepl(":", raw_info)] %>%
+    str_split_fixed(":", 2) %>%
+    as_tibble() %>%
+    rename(field = V1, value = V2) %>%
+    mutate(
+      field = str_trim(tolower(field)),
+      value = str_trim(value)
+    ) %>%
+    filter(field %in% c("country of origin", "family", "type", "flavour"))
+  
+  # Convert to wide format
+  cheese_info <- pivot_wider(info_pairs, names_from = field, values_from = value)
+  
+  # Add milk column
+  cheese_info <- cheese_info %>%
+    mutate(milk = milk) %>%
+    relocate(milk)
+
+  return(cheese_info)
+}
+
+
+cheese_details <- map_dfr(cheese_list, parse_cheese)
+
+```
+```{r}
+
+# Nice kable table
+
+library(knitr)
+library(kableExtra)
+
+cheese_details %>%
+  rename(
+    Milk    = milk,
+    Country = `country of origin`,
+    Family  = family,
+    Type    = type,
+    Flavour = flavour
+  ) %>%
+  kable(
+    caption = "10 Cheeses",
+    format = "html",
+    escape = TRUE
+  ) %>%
+  kable_styling(
+    full_width = FALSE,
+    bootstrap_options = c("striped", "hover", "condensed"),
+    position = "left"
+  )
+
+```
+**Part 6:** Evaluate the code that you wrote in terms of **efficiency**. To
+what extent do your function(s) adhere to the **principles for writing good functions**?
+To what extent are your **functions efficient**? To what extent is your 
+**iteration of these functions efficient**? 
+
 

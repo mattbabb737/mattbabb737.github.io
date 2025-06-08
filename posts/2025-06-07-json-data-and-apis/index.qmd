@@ -1,5 +1,185 @@
 ---
-title: "index"
-format: html
+title: "JSON Data and API's"
+description: "[add title]"
+author:
+  - name: Matt Babb
+date: 06-07-2025
+categories: [Quarto, R, JSON] # self-defined categories
+image: leaflet_route.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+editor: source
+embed-resources: true
+echo: true
+warning: false
+error: false
+code-fold: true
+code-tools: true
 ---
 
+## Pass Times for U.S. State Captials
+
+```{r}
+#| label: setup
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(tidyjson)
+library(lubridate)
+
+states <- read_table(
+  "https://people.sc.fsu.edu/~jburkardt/datasets/states/state_capitals_ll.txt",
+  col_names = c("state", "lat", "long")
+) |>
+  filter(state != "US")
+
+get_datetimes <- function(lat, long, wait = 0.1) {
+  Sys.sleep(wait)
+
+  tryCatch(
+    {
+      start_times <- httr::GET(
+        glue::glue(
+          "https://api.g7vrd.co.uk/v1/satellite-passes/25544/{lat}/{long}.json"
+        ),
+        httr::timeout(10)
+      )$content |>
+        rawToChar() |>
+        as.tbl_json() |>
+        enter_object("passes") |>
+        gather_array() |>
+        spread_all() |>
+        mutate(start_dt = as_datetime(start)) |>
+        filter(!is.na(start_dt)) |>
+        arrange(start_dt) |>
+        pull(start_dt)
+
+      valid_pass <- \(n)
+        if (length(start_times) >= n) start_times[n] else NA_POSIXct_
+
+      tibble(
+        pass1 = valid_pass(1),
+        pass2 = valid_pass(2),
+        pass3 = valid_pass(3),
+      )
+    },
+    error = function(e) {
+      warning(glue::glue(
+        "Error processing API for ({lat},{long}): {e$message}"
+      ))
+      tibble(
+        pass1 = NA_POSIXct_,
+        pass2 = NA_POSIXct_,
+        pass3 = NA_POSIXct_
+      )
+    }
+  )
+}
+
+result <- bind_cols(states, map2_df(states$lat, states$long, get_datetimes)) |>
+  write_csv("space_data.csv")
+```
+
+## Mapping the Data
+
+```{r}
+# Load libraries
+library(readr)
+library(dplyr)
+library(lubridate)
+library(lutz)
+library(purrr)
+library(leaflet)
+
+# Read in your ISS pass data CSV
+space_data <- read_csv("space_data.csv")
+
+# Clean the data:
+#    - Remove rows where all passes are NA
+#    - Filter only valid U.S. longitudes (negative)
+cleaned_space <- space_data %>%
+  filter(!(is.na(pass1) & is.na(pass2) & is.na(pass3))) %>%
+  filter(long < 0)
+
+# Assign time zones based on latitude & longitude
+cleaned_space <- cleaned_space %>%
+  mutate(tz = tz_lookup_coords(lat, long, method = "accurate"))
+
+# Keep only rows with valid Olson time zones
+cleaned_space <- cleaned_space %>%
+  filter(tz %in% OlsonNames())
+
+# Convert UTC pass times to local time for each state (rowwise using map2)
+cleaned_space <- cleaned_space %>%
+  mutate(
+    pass1_local = as_datetime(unlist(map2(pass1, tz, ~ with_tz(.x, .y)))),
+    pass2_local = as_datetime(unlist(map2(pass2, tz, ~ with_tz(.x, .y)))),
+    pass3_local = as_datetime(unlist(map2(pass3, tz, ~ with_tz(.x, .y))))
+  )
+
+
+rocket_icon <- makeIcon(
+  iconUrl = "rocket.svg",
+  iconWidth = 30, # Adjust size as needed
+  iconHeight = 30
+)
+```
+
+
+## International Space Station Pass Times (Local Time Zones)
+
+```{r}
+# Plot
+m <- leaflet(cleaned_space) %>%
+  addTiles() %>%
+  addMarkers(
+    lng = ~long,
+    lat = ~lat,
+    icon = rocket_icon,
+
+    # Hover label shows next pass in local time
+    label = ~ paste0("Next pass: ", format(pass1_local, "%Y-%m-%d %H:%M:%S")),
+
+    # Clickable popup shows all 3 local pass times
+    popup = ~ paste0(
+      "<b>",
+      state,
+      "</b><br/>",
+      "Pass 1: ",
+      format(pass1_local, "%Y-%m-%d %H:%M:%S"),
+      "<br/>",
+      "Pass 2: ",
+      format(pass2_local, "%Y-%m-%d %H:%M:%S"),
+      "<br/>",
+      "Pass 3: ",
+      format(pass3_local, "%Y-%m-%d %H:%M:%S")
+    )
+  )
+m
+```
+
+
+## Drawing the Route of the ISS
+
+```{r}
+library(leaflet.extras2)
+
+ordered_result <- result |>
+  filter(!is.na(pass1)) |>
+  arrange(pass1)
+
+m |>
+  addArrowhead(
+    data = ordered_result,
+    lat = ~lat,
+    lng = ~long,
+    color = "red",
+    options = arrowheadOptions(
+      frequency = "200px",
+      size = "10px",
+      color = "purple",
+      opacity = 1,
+      fill = TRUE
+    )
+  )
+```
