@@ -126,6 +126,13 @@
     "text": "Code Choices (Exhibit 2)\nFor this piece, I created a custom C++ function based on the one from the Iterated Function Systems tutorial. I called it unboxer_grid_circle(), which simulates iterative transformations in a confined space. This produced the below image, which I then masked into a perfect circle using a different function called raster_art_circle(). I adjusted the scale to control the proportion of the visible part, centering the image. I used the “MononokeMedium” palette (I’m also a big Ghibli fan) to create an earthy, mysterious mood."
   },
   {
+    "objectID": "posts/2025-06-07-Senior-project/index.html",
+    "href": "posts/2025-06-07-Senior-project/index.html",
+    "title": "Meditation and retrospective time estimation",
+    "section": "",
+    "text": "This was my Senior Project from my undergraduate degree in Psychology at Cal Poly, San Luis Obispo."
+  },
+  {
     "objectID": "posts/2025-06-07-json-data-and-apis/index.html",
     "href": "posts/2025-06-07-json-data-and-apis/index.html",
     "title": "JSON Data and API’s",
