@@ -11,6 +11,8 @@ categories: [Quarto, R, CSS, CSL]
 image: lof_plot.jpg
 ---
 
+This was my Senior Project from my undergraduate degree in Psychology at Cal Poly, San Luis Obispo.
+
 <iframe 
   src="MTP_final.html" 
   width="100%" 
