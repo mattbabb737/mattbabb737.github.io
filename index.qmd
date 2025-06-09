@@ -1,5 +1,6 @@
 ---
 title: "Matt Babb"
+format: html
 image: Me-1.png
 toc: false
 about:
@@ -15,4 +16,4 @@ about:
       href: mailto:mattbabb737@gmail.com
 ---
 
-Hello! Thank you for finding your way to my portfolio. Here you'll find numerous posts exploring many techniques and features of statistical computing in R, as well as my Senior Project. Enjoy!
+Hello! Thank you for finding your way to my portfolio. Here you'll find numerous posts exploring many techniques and features of statistical computing in R, as well as my Senior Project. These posts were built from lab assignments taught in STAT 541 by [Dr. Allison Theobold](https://www.linkedin.com/in/allison-theobold-1ba0191a8/) at Cal Poly, San Luis Obispo, CA. Enjoy!
